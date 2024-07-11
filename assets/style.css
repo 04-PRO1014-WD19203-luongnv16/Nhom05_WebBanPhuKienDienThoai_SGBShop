@@ -1,0 +1,471 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.content_left {
+    width: 20%;
+    float: left;
+    background-color: #013A8B;
+    border-right: 1px solid black;
+}
+
+.content_left ul {
+    padding: 20px 0px;
+}
+
+.content_left li {
+    list-style: none;
+    padding: 10px 20px;
+    border-bottom: 1px solid white;
+}
+
+.content_left a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    padding: 10px 0px;
+    width: 150px;
+}
+
+.content_right {
+    width: 80%;
+    min-height: 100px;
+    float: right;
+}
+
+/* ========= */
+/* USER */
+/* ========= */
+
+/* header */
+.header {
+    margin-bottom: 60px;
+}
+
+.header1 {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #013A8B;
+    border-bottom: 1px solid white;
+}
+
+.logo {
+    width: 30%;
+}
+
+.logouser img {
+    width: 177px;
+}
+
+.searchuser {
+    width: 65%;
+    display: flex;
+}
+
+.searchuser input {
+    width: 95%;
+    padding: 5px;
+    min-height: 40px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #ccc;
+    /* Thêm viền */
+}
+
+.searchuser button {
+    width: 5%;
+    min-height: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid #ccc;
+    /* Thêm viền */
+    border-left: none;
+    /* Loại bỏ viền trái để sát nhau */
+}
+
+.user {
+    width: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menubg {
+    background-color: #013A8B;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menuuser {
+    background-color: #013A8B;
+    padding: 10px 0px;
+    width: 80%;
+}
+
+.menuuser ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuuser li {
+    list-style: none;
+    padding: 0px 20px;
+}
+
+.menuuser a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Danh mục */
+.menuuser1 {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #6E819C;
+    /* padding: 10px 0px; */
+}
+
+.bm {
+    width: 80%;
+}
+
+.banner {
+    margin: 0;
+}
+
+.banner img {
+    display: block;
+}
+
+.danhmucus {
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #013A8B;
+    margin: 0;
+}
+
+.danhmucus a {
+    color: white;
+    text-decoration: none;
+}
+
+.danhmucus a p {
+    font-size: 12px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+/* ========== */
+/* FOOTER */
+/* ========== */
+.footer {
+    width: 100%;
+    background-color: #013A8B;
+    display: flex;
+    justify-content: center;
+}
+
+.footer1 {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gioithieu {
+    width: 25%;
+}
+
+.text li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.text a {
+    text-decoration: none;
+    color: white;
+}
+
+.logofooter img {
+    width: 70%;
+    padding: 20px 0px;
+}
+
+.lienhe {
+    width: 25%;
+}
+
+.titlelh {
+    padding: 20px 0px;
+    color: white;
+}
+
+.sdt li {
+    list-style: none;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.thanhtoan {
+    width: 35%;
+    padding: 20px 0px;
+    color: white;
+}
+
+/* Modal styles */
+.modal-toggle {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    transform: scale(0.9);
+}
+
+.modal-toggle:checked+.modal {
+    display: flex;
+}
+
+.modal-toggle:checked+.modal .modal-content {
+    transform: scale(1);
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.close:hover {
+    color: black;
+}
+
+.auth-forms {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.auth-forms h2 {
+    text-align: center;
+}
+
+.auth-forms label {
+    display: block;
+    margin-top: 10px;
+}
+
+.auth-forms input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-forms button {
+    width: 100%;
+    padding: 10px;
+    background-color: #013A8B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-forms button:hover {
+    background-color: #0056b3;
+}
+
+/* =========== */
+/* TRANG TÀI KHOẢN (taikhoan.php)*/
+/* =========== */
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nameform{
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+.formtaikhoan {
+    margin: 60px 0px;
+    width: 80%;
+    display: flex;
+}
+
+.dangnhaptaikhoan {
+    width: 50%;
+    padding-right: 5%;
+    border-right: 0.5px solid #6E819C;
+}
+
+.luuvaquen {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dangkytaikhoan {
+    width: 50%;
+    padding-left: 5%;
+}
+
+.contentformdk {
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contentformdn {
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.valueinput input {
+    width: 100%;
+    min-height: 40px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.btntaikhoan input {
+    width: 100%;
+    min-height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #0056b3;
+    color: white;
+}
+.titleinput{
+    padding-bottom:10px ;
+    font-weight: bold;
+}
+.loitaikhoan p{
+    color: red;
+    padding: 10px 0px;
+}
+/* =========== */
+/* TRANG CHỦ (trangchu.php)*/
+/* =========== */
+.contenttc{
+    width: 80%;
+    margin-bottom: 60px;
+}
+.sanphammoi{
+    min-height: 200px;
+    box-shadow: 0px 0px 1px grey; 
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.headercontent{
+    min-height: 50px;
+    background-color: #0056b3;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.titlebox h2{
+    color: white;
+    padding-left: 20px;
+}
+.titlebox{
+
+}
+.tatcasp{
+    box-shadow: 0px 0px 1px grey;  
+    border-radius: 10px;
+}
+
+.sanphams{
+    padding: 10px 20px;
+}
+.sanpham{
+    width: 25%;
+    border: 1px solid #6E819C;
+    padding: 20px 0px;
+    border-radius: 5px;
+    text-align: center;
+}
+.sanpham img{
+    width: 100%;
+}
+.tensp h4{
+    line-height: 22px;
+    font-weight: 400;
+}
+.tensp a{
+    color: #1e1e1e;
+    line-height: 18px;
+    font-size: 15px;
+    text-decoration: none;
+}
+.giasp{
+    padding: 10px 0px;
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+}
+.muahang button{
+    width: 60%;
+    min-height: 40px;
+    background-color: white;
+    color: #0056b3;
+    border-radius: 20px;
+    border: 1px dotted #0056b3;
+    font-size: 16px;
+    font-weight: bold;
+}
+.muahang button:hover{
+    background-color: #0056b3;
+    color: white;
+}
